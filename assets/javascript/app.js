@@ -120,7 +120,9 @@
               answerUrl: '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/300px-Meisje_met_de_parel.jpg" height: 100px>'
               }
 
-          ];  /* end var triviaGame */
+          ];  
+          
+  //end var triviaGame 
 
 
  // end variables
@@ -138,6 +140,7 @@
 // end function start() 
 
 // function decrement()
+
               function decrement(){
                     number--;
                     $('#countDown').html('Time Remaining: ' + number + ' seconds');
@@ -160,6 +163,7 @@
 //end function decrement() 
                   
                   
+// screen draw function
 
                function screenReDo() {
                   if (i<triviaGame.length) {
@@ -194,7 +198,9 @@
 
                         $('#buttonPlace').on('click', screenreDo);
                   }
-                } /* end screenReDo() */
+                } 
+
+          //end screenReDo()
 
 
                   
@@ -318,10 +324,11 @@
                             timer=setTimeout(screenReDo,1000*3);
                             
                         })
-
+// end on click functions
                   
           
 
-} /*end function startGame() */
+} 
+//end function startGame()
 
               
