@@ -15,7 +15,7 @@
               var number=20;
               clearInterval(counter);
               clearTimeout(timer);
-              var number=20;
+              
               $('#countDown').html('Time Remaining: ' + number + ' seconds');
               var triviaGame = [
               {
@@ -184,7 +184,15 @@
                         $('#ans4').html('')
                         $('#imageUrl').html('');
                         $('#buttonPlace').html('<button>Play Again</button>');
-                        $('#buttonPlace').on('click', startGame);;
+                        rightAns=0;
+                        wrongAns=0;
+                        noAns=0;
+                        i=0;
+                        number=20;
+                        clearInterval(counter);
+                        clearTimeout(timer);
+
+                        $('#buttonPlace').on('click', screenreDo);
                   }
                 } /* end screenReDo() */
 
