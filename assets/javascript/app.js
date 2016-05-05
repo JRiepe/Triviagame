@@ -25,7 +25,7 @@
               answer3: "Grandma Moses",
               answer4: "Salvador Dali",
               correctAnswer: "Leonardo daVinci",
-              answerUrl: "<img src='https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwjGztmN_8DMAhXBPiYKHSaMAwsQjRwIBw&url=http%3A%2F%2Fwww.wikiart.org%2Fen%2Fleonardo-da-vinci%2Fmona-lisa&psig=AFQjCNH_hVfZkbVuu7Ya6YE6rBF2XXaTvA&ust=1462470979765373'>"
+              answerUrl: "<img src='http://www.star2.com/wp-content/uploads/2016/05/mona-smile-770x470.jpg' height: 200px>"
                },
 
               {
@@ -35,7 +35,7 @@
               answer3: "Grandma Moses",
               answer4: "Rembrandt",
               correctAnswer: "Vincent Van Gogh",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/300px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg' height: 200px>"
                },
 
               {
@@ -45,7 +45,7 @@
               answer3: "Pablo Picasso",
               answer4: "Edvard Munch",
               correctAnswer: "Edvard Munch",
-              answerUrl: ""
+              answerUrl: "<img src='http://www.edvardmunch.org/images/paintings/the-scream.jpg' height: 200px>"
               },
           
               {
@@ -55,7 +55,7 @@
               answer3: "Pablo Picasso",
               answer4: "Edvard Munch",
               correctAnswer: "Rembrandt",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/The_Nightwatch_by_Rembrandt.jpg/380px-The_Nightwatch_by_Rembrandt.jpg' height: 200px>"
               },
 
               {
@@ -65,7 +65,7 @@
               answer3: "Johannes Vermeer",
               answer4: "Edvard Munch",
               correctAnswer: "Grant Wood",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/250px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg' height:200px>"
               },
 
 
@@ -76,7 +76,7 @@
               answer3: "Johannes Vermeer",
               answer4: "Pablo Picasso",
               correctAnswer: "Pablo Picasso",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Picasso_The_Weeping_Woman_Tate_identifier_T05010_10.jpg/200px-Picasso_The_Weeping_Woman_Tate_identifier_T05010_10.jpg' height: 200px>"
               },
 
               {
@@ -86,7 +86,7 @@
               answer3: "Georges Seurat",
               answer4: "Grandma Moses",
               correctAnswer: "Pablo Picasso",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/en/thumb/7/74/PicassoGuernica.jpg/350px-PicassoGuernica.jpg' height: 200px>"
               },
 
               {
@@ -96,7 +96,7 @@
               answer3: "Salvador Dali",
               answer4: "Grandma Moses",
               correctAnswer: "Salvador Dali",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg' height: 200px>"
               },
 
               {
@@ -106,7 +106,7 @@
               answer3: "Salvador Dali",
               answer4: "Johannes Vermeer",
               correctAnswer: "Georges Seurat",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg/350px-Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg' height: 200px>"
               },
           
 
@@ -117,7 +117,7 @@
               answer3: "Georges Seurat",
               answer4: "Johannes Vermeer",
               correctAnswer: "Johannes Vermeer",
-              answerUrl: ""
+              answerUrl: "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/300px-Meisje_met_de_parel.jpg' height: 200px>"
               }
 
           ];  /* end var triviaGame */
