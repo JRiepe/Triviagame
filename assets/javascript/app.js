@@ -11,7 +11,7 @@ function loadGame() {
               var rightAns=0;
               var wrongAns=0;
               var noAns=0;
-              var i=0;
+              var i=-1;
               
               /* console.log(i+' '+rightAns+' '+wrongAns+' '+noAns+' '+number); */
               inGame();         
@@ -128,8 +128,8 @@ function loadGame() {
 
 
                   console.log('i= '+i)
-                  if (i<triviaGame.length) {
-
+                  if (i<triviaGame.length-1) {
+                        i++;
                         /* start timer */
                         $('#countDown').html('Time Remaining: ' + number + ' seconds');
                         start();
@@ -139,10 +139,10 @@ function loadGame() {
 
                         $('#buttonPlace').html('');
                         $('#question').html('<br>'+triviaGame[i].question+'<br>');
-                        $('#ans1').html('<br>'+triviaGame[i].answer1+'<br>');
-                        $('#ans2').html('<br>'+triviaGame[i].answer2+'<br>');
-                        $('#ans3').html('<br>'+triviaGame[i].answer3+'<br>');
-                        $('#ans4').html('<br>'+triviaGame[i].answer4+'<br>');
+                        $('#ans1').html('<div id ="answer">'+triviaGame[i].answer1+'</div><br>');
+                        $('#ans2').html('<div id ="answer">'+triviaGame[i].answer2+'</div><br>');
+                        $('#ans3').html('<div id ="answer">'+triviaGame[i].answer3+'</div><br>');
+                        $('#ans4').html('<div id ="answer">'+triviaGame[i].answer4+'</div><br>');
                             
                         /* on click functions */
 
@@ -150,7 +150,7 @@ function loadGame() {
                                
                             if (triviaGame[i].answer1 == triviaGame[i].correctAnswer) {
                                 rightAns++;
-                                $('#question').html('<br>Correct<br>');
+                                $('#question').html('<br>Correct!<br>');
                                 $('#ans1').html('');
                                 $('#ans2').html('');                                    
                   
@@ -167,20 +167,21 @@ function loadGame() {
                             $('#ans3').html('');
                             $('#ans4').html('');
                             $('#imageUrl').html(triviaGame[i].imageUrl)
-                            i++;
+                            
                             
                             console.log('i= '+i+' right: '+rightAns+' wrong: '+wrongAns+' No Ans: '+noAns+' number: '+number+' ');
                             console.log('A1: '+triviaGame[i].answer1+' A2: '+triviaGame[i].answer2+' A3: '+triviaGame[i].answer3+' A4: '+triviaGame[i].answer4);
                             clearInterval(counter);
                             number=20;
-                            setTimeout(inGame,1000*5);
+                            //i++;
+                            setTimeout(inGame,1000*3);
 
                         })
 
                         $('#ans2').on('click', function() {
                             if (triviaGame[i].answer2 == triviaGame[i].correctAnswer) {
                                 rightAns++;
-                                $('#question').html('<br>Correct<br>');
+                                $('#question').html('<br>Correct!<br>');
                                 $('#ans1').html('');
                                 $('#ans2').html('');
                                     
@@ -197,11 +198,12 @@ function loadGame() {
                             $('#ans3').html('');
                             $('#ans4').html('');
                             $('#imageUrl').html(triviaGame[i].imageUrl)
-                            i++;
+                            
                             console.log(i);
                             clearInterval(counter);
                             number=20;
-                            setTimeout(inGame,1000*5);
+                            //i++;
+                            setTimeout(inGame,1000*3);
 
                         })
                 
@@ -209,7 +211,7 @@ function loadGame() {
                         $('#ans3').on('click', function() {
                             if (triviaGame[i].answer3 == triviaGame[i].correctAnswer) {
                                 rightAns++;
-                                $('#question').html('<br>Correct<br>');
+                                $('#question').html('<br>Correct!<br>');
                                 $('#ans1').html('');
                                 $('#ans2').html('');
                                     
@@ -226,10 +228,11 @@ function loadGame() {
                             $('#ans3').html('');
                             $('#ans4').html('');
                             $('#imageUrl').html(triviaGame[i].imageUrl)
-                            i++;
+                            
                             clearInterval(counter);
                             number=20;
-                            setTimeout(inGame,1000*5);
+                            //i++;
+                            setTimeout(inGame,1000*3);
 
                         })
 
@@ -237,7 +240,7 @@ function loadGame() {
                         $('#ans4').on('click', function() {
                             if (triviaGame[i].answer3 == triviaGame[i].correctAnswer) {
                                 rightAns++;
-                                $('#question').html('<br>Correct<br>');
+                                $('#question').html('<br>Correct!<br>');
                                 $('#ans1').html('');
                                 $('#ans2').html('');
                                     
@@ -253,13 +256,18 @@ function loadGame() {
                             $('#ans3').html('');
                             $('#ans4').html('');
                             $('#imageUrl').html(triviaGame[i].imageUrl)
-                            i++;
+                            
                             clearInterval(counter);
                             number=20;
-                            setTimeout(inGame,1000*5);
+                            //i++;
+                            setTimeout(inGame,1000*3);
 
                         })
-                    }
+
+                  } /* end if (i,triviaGame.length) */
+                  else {
+                    endButton();
+                  }
              
 
               function endButton() {
@@ -286,6 +294,8 @@ function loadGame() {
                         /* stop(); */
                         alert('Time is Up!');
                         clearInterval(counter);
+                        number=20;                  
+                        setTimeout(inGame,1000*3)
                     }
               }/* end function decrement() */
 

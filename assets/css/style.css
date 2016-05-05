@@ -89,11 +89,11 @@ button	{
 	margin: 0px auto;
 	position: relative;
 	float: none;
-	width: 50%;
-	height: 50px
+	width: 300px;
+	height: auto;
 
 	border-style: solid;
-	border-color: ivory;
+	border-color: transparent;
 	border-width: 4px;
 	text-align: center;
 	color: red;
@@ -103,13 +103,40 @@ button	{
 
 
 #question	{
+	margin: 0px auto;
+	position: relative;
+	float: none;
+	width: 300px;
+	height: auto;
+
+	border-style: solid;
+	border-color: transparent;
+	border-width: 2px;
+	text-align: center;
+	
 	font-size: 24px;
+
+	
 	color: ivory;
 
 }
 
+#answer	{
+	margin: 0px auto;
+	position: relative;
+	float: none;
+	width: 200px;
+	height: auto;
 
-#ans1:hover, #ans2:hover, #ans3:hover, #ans4:hover { 
+	border-style: solid;
+	border-color: ivory;
+	border-width: 2px;
+	text-align: center;
+	color: skyblue;
+	font-size: 20px;
+}
+
+#answer:hover { 
 	margin: 0px auto;
 	position: relative;
 	float: none;
@@ -117,7 +144,8 @@ button	{
 
 	background-color: ivory;
 	color: black;
-	width: 150px;
+	width: 200px;
+	height: auto;
 	text-align: center;
 	vertical-align: middle !important;
 
