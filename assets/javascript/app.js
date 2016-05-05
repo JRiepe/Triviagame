@@ -166,7 +166,8 @@
                         $('#ans1').html('<div id ="answer">'+triviaGame[i].answer1+'</div><br>');
                         $('#ans2').html('<div id ="answer">'+triviaGame[i].answer2+'</div><br>');
                         $('#ans3').html('<div id ="answer">'+triviaGame[i].answer3+'</div><br>');
-                        $('#ans4').html('<div id ="answer">'+triviaGame[i].answer4+'</div><br>');  
+                        $('#ans4').html('<div id ="answer">'+triviaGame[i].answer4+'</div><br>');
+                        $('#imageUrl').html('');  
                   }
                   else  {
                         
@@ -175,6 +176,7 @@
                         $('#ans2').html('Wrong Answers: '+wrongAns);
                         $('#ans3').html('No Answers: '+noAns);
                         $('#ans4').html('')
+                        $('#imageUrl').html('');
                         $('#buttonPlace').html('<button>Play Again</button>');
                         $('#buttonPlace').on('click', startGame);;
                   }
@@ -204,7 +206,7 @@
                                 
                             $('#ans3').html('');
                             $('#ans4').html('');
-                            $('#imageUrl').html(triviaGame[i].imageUrl)
+                            $('#imageUrl').append(triviaGame[i].imageUrl);
                     
                             clearInterval(counter);
                             clearTimeout(timer);
@@ -233,7 +235,7 @@
                             
                             $('#ans3').html('');
                             $('#ans4').html('');
-                            $('#imageUrl').html(triviaGame[i].imageUrl)
+                            $('#imageUrl').append(triviaGame[i].imageUrl);
                             
                             
                             clearInterval(counter);
@@ -264,7 +266,7 @@
                             
                             $('#ans3').html('');
                             $('#ans4').html('');
-                            $('#imageUrl').html(triviaGame[i].imageUrl)
+                            $('#imageUrl').append(triviaGame[i].imageUrl).
                             
                             clearInterval(counter);
                             clearTimeout(timer);
