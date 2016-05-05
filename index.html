@@ -19,6 +19,7 @@
 		<!-- Header -->
 			<header>
 			Famous Artists Trivia Game!
+			<br>
 			</header> <!-- end <header> -->
 
 		<!-- Row 1 ... Choose your character-->
@@ -26,23 +27,23 @@
 			
 			<div class="row-md-4 row1">
 				<div id='countDown'></div><br>
-				<div id='question'></div>Q<br>
-				<div id='answer1'></div>A1<br>
-				<div id='answer2'></div>A2<br>
-				<div id='answer3'></div>A3<br>
-				<div id='answer4'></div>A4<br>
-			</div> <!-- end row 2 <div class="row-md-4"> -->
+				<div id='question'></div><br>
+				<div id='ans1'></div><br>
+				<div id='ans2'></div><br>
+				<div id='ans3'></div><br>
+				<div id='ans4'></div><br>
+				<div id='imageUrl'></div>
+			</div> <!-- end row 1 <div class="row-md-4"> -->
 		
 
 			
 
-		
 			
-			<br>
-			<button id=theButton>Start</button>
-			<br>
-			<br>
-			<br>
+			<br><br>
+			<div id=buttonPlace>
+			<button>Start</button>
+			</div>
+			<br><br>
 
 		
 
@@ -56,7 +57,7 @@
 	<!-- Begin Script -->
 		<script>
 			$(document).ready(function(){
-				startGame();
+				loadGame();
 			})
 		</script>
 	<!-- End Script -->		
