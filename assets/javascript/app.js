@@ -117,7 +117,7 @@
               answer3: "Georges Seurat",
               answer4: "Johannes Vermeer",
               correctAnswer: "Johannes Vermeer",
-              answerUrl: '<img style='height: 100%; max-width: 100%; width: auto; object-fit: contain; padding:5px' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/300px-Meisje_met_de_parel.jpg" height: 100px>'
+              answerUrl: "<img style='height: 100%; max-width: 100%; width: auto; object-fit: contain; padding:5px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/300px-Meisje_met_de_parel.jpg' height: 100px>"
               }
 
           ];  
